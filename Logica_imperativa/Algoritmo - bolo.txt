@@ -1,0 +1,30 @@
+
+Pedro vai fazer bolo de chocolate pela primeira vez.
+
+Ingredientes que comprou:
+
+ - Ovos
+ - Leite
+ - Farinha
+ - Açúcar
+ - Manteiga
+ - Achocolatado em pó
+
+Pedro deve colocar os ingredientes numa batedeira para fazer a massa:
+
+ - Pegar a batedeira e colocá-la na tomada;
+ - Colocar os ingredientes um a um conforme as quantidades indicadas;
+ - Quebrar os ovos e colocar em um recipiente separado para se certificar que estão bons para consumo, antes de colocá-los na batedeira;
+ - Ligar a batedeira e bater os ingredientes de acordo com o tempo estipulado na receita;
+ - Desligar a batedeira no tempo estimado;
+ - Pegar uma forma de bolo;
+ - Passar manteiga por toda a forma;
+ - Passar farinha por toda a forma;
+ - Despejar a massa na forma;
+ - Ligar o forno na temperatura indicada na receita;
+ - Colocar a forma dentro do forno e fechar o forno;
+ - Após o tempo estimado desligar o forno e retirar a forma do forno, com cuidado;
+ - Esperar o bolo esfriar para desenformá-lo (colocar em outro recipiente);
+ - Desenformar o bolo;
+ - Cortar o bolo;
+ - Servir.
