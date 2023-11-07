@@ -42,7 +42,7 @@ dia = "ter"
 feriado = False
 (dia == "seg" or !(feriado == False)
 
-Resposta:Falso, pois nenhuma das opções é verdadeira, observando que ! é a negação da variável, tornando-a falsa com relação a variável.
+Resposta:Verdadeiro.
 
 
 

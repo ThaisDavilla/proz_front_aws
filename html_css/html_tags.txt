@@ -1,0 +1,54 @@
+Quais as principais tags da HTML
+
+Para a construção de um site, é necessário ter uma estrutura de base HTML. Portanto, é muito importante conhecer as tags que compõem essa base para a formação dos elementos que fazem parte do DOM.
+
+*Introdução as tags
+ As tags são estruturas de linguagem de marcação. Elas contêm instruções que servem para informar a estrutura do site ao navegador e construir elementos da HTML. Quando são utilizadas corretamente, elas contribuem bastante para o SEO de um site.
+
+- Cada tag é formada pelo sinal menor que <, nome do elemento e sinal maior que >, nessa ordem. Dessa forma:
+
+ <html>
+
+No entanto, existem tags que precisam ser fechadas e outras não. Na maioria dos casos, o fechamento é necessário para definir o início e o fim do documento. Para fechá-la, colocamos a barra / antes do nome do elemento.
+
+ </html>
+
+
+- Para as tags que não possuem fechamento, é preciso colocar a barra antes do sinal de maior que:
+
+<input/>
+
+Além disso, elas podem receber atributos com valor e modificar sua estrutura ou funcionalidade.
+
+*Atributos
+Apesar das tags terem seus próprios atributos, alguns podem ser utilizados em várias tags. Veremos alguns desses agora.
+
+-class: atribui uma classe CSS para uma tag. Isso faz com que a CSS e a linguagem Javascript selecionem e acessem elementos específicos do código HTML;
+
+-id: atribui um id CSS para uma tag. Seu objetivo é identificar o elemento quando utilizar scripts ou estilizar com CSS;
+
+-href: referenciar um URL externo, seja um link ou um arquivo;
+
+-src: atribui um URL para um conteúdo. Por exemplo, uma imagem ou um arquivo;
+type: atribui o tipo do elemento;
+
+-value: atribui o valor padrão de um elemento.
+
+*Principais tipos de tags
+É possível categorizar as tags em dois tipos: o block-level (nível de bloco) e o inline (em linha). O primeiro ocupa todo o espaço do seu elemento pai e o segundo ocupa apenas o espaço do seu conteúdo.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
