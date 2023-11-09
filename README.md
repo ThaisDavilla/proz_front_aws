@@ -86,8 +86,8 @@ Para a prática do HTML construímos algumas páginas.
 A intenção é praticar a inserção de links e imagens, bem como o conhecimento das tags e os elementos HTML.
 
 
-[Página sobre alguns pontos turísticos da cidade de Recife - PE] (https://thaisdavilla.github.io/pontos_turisticos_recife_pe/)
+[ Página sobre alguns pontos turísticos da cidade de Recife - PE ] ( https://thaisdavilla.github.io/pontos_turisticos_recife_pe/ )
 
 
-[Página sobre o Marco Zero da cidade de Recife - PE] (https://thaisdavilla.github.io/marco_zero_recife/)
+[ Página sobre o Marco Zero da cidade de Recife - PE ] ( https://thaisdavilla.github.io/marco_zero_recife/ )
 
