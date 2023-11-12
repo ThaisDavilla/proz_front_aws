@@ -1,7 +1,7 @@
 # Introdução à Programação
 ### Curso de Front End e AWS. Parceria entre Proz Tecnologia, Portal Tech, AWS e Meta.
 
-#### Projetos desenvolvodos durante o curso:
+#### Projetos desenvolvidos durante o curso:
 
 * **Projeto Integrador**
 
