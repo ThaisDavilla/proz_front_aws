@@ -1,6 +1,29 @@
 # Introdução à Programação
 ### Curso de Front End e AWS. Parceria entre Proz Tecnologia, Portal Tech, AWS e Meta.
 
+#### Projetos desenvolvodos durante o curso:
+
+* **Projeto Integrador**
+
+O curso propõe que desenvolvamos em grupo um PI de nossa escolha.
+
+Meu grupo é composto por cinco pessoas e decidimos construir um blog falando sobre TI e suas diversas áreas.
+
+[Clique aqui para ver o repositório do nosso blog.](https://github.com/BarachoSilva/codigo-e-cafe)
+
+
+* **Projetos individuais desenvolvidos durante o curso:**
+Para a prática do HTML construímos algumas páginas.
+
+
+A intenção é praticar a inserção de links e imagens, bem como o conhecimento das tags e os elementos HTML.
+
+
+[Página sobre alguns pontos turísticos da cidade de Recife - PE](https://thaisdavilla.github.io/pontos_turisticos_recife_pe/)
+
+
+[Página sobre o Marco Zero da cidade de Recife - PE](https://thaisdavilla.github.io/marco_zero_recife/)
+
 #### Matriz do curso:
 
 * **Lógica Imperativa - 30hrs:**
@@ -79,15 +102,5 @@ através da articulação de conhecimentos
 teóricos e práticos, além de aproximar o aluno
 da realidade do mercado profissional.
 
-## Projetos desenvolvidos durante o curso
-Para a prática do HTML construímos algumas páginas.
 
-
-A intenção é praticar a inserção de links e imagens, bem como o conhecimento das tags e os elementos HTML.
-
-
-[Página sobre alguns pontos turísticos da cidade de Recife - PE](https://thaisdavilla.github.io/pontos_turisticos_recife_pe/)
-
-
-[Página sobre o Marco Zero da cidade de Recife - PE](https://thaisdavilla.github.io/marco_zero_recife/)
 
