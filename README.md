@@ -13,6 +13,8 @@ Meu grupo é composto por cinco pessoas e decidimos construir um blog falando so
 
 
 * **Projetos individuais desenvolvidos durante o curso:**
+
+  
 Para a prática do HTML construímos algumas páginas.
 
 
