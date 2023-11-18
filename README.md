@@ -7,7 +7,13 @@
 
 O curso propõe que desenvolvamos em grupo um PI de nossa escolha.
 
-Meu grupo é composto por cinco pessoas e decidimos construir um blog falando sobre TI e suas diversas áreas.
+Meu grupo é composto por quatro pessoas e decidimos construir um blog falando sobre TI e suas diversas áreas.
+
+
+**Ferramentas utilizadas:**
+ - Discord - Para comunicação
+ - VS Code - IDE
+ - Git - Versionamento
 
 [Clique aqui para ver o repositório do nosso blog.](https://github.com/BarachoSilva/codigo-e-cafe)
 
