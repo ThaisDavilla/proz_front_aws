@@ -1,0 +1,122 @@
+* O que é CSS?
+ 
+A Cascading Style Sheets (CSS), no português Folhas de Estilo em Cascata, é uma linguagem de estilização utilizada em conjunto com a HTML para aplicações web.
+
+* História
+
+ Com a evolução da HTML, foi possível manipular a aparência dos seus elementos, deixando a linguagem cada vez mais complexa e difícil de manter.
+
+ Além disso, cada navegador interpretava essas questões de forma diferente, o que dificultava ainda mais a visualização dos sites.
+
+ Para resolver esses problemas, Hakon Wium que na época trabalhava com o Tim Berners, resolveu criar uma forma mais fácil de estilizar os sites e melhorar sua visualização.
+
+ Em 1994, na mesma época em que eles trabalhavam em um navegador chamado Argo, surge a CSS.
+
+ No ano seguinte, eles apresentaram a World Wide Web Consortium (W3C) e o projeto foi aprovado com a criação de uma equipe de trabalho.
+
+ Em 1996, a primeira versão da CSS foi introduzida. Dois anos depois foi lançada a segunda e, logo após, a terceira, que é a mais atual. Essa está em constante desenvolvimento, ou seja, ainda há adição de novas características.
+
+* Como usar a CSS?
+
+ A CSS permite aplicar estilos seletivos. Portanto, vamos aprender como aplicá-los nos elementos da HTML.
+
+ Após a criação de toda a estrutura em HTML da página, vamos criar um arquivo chamado styles.css. Nele, colocaremos todas as configurações de estilo.
+
+ Na tag head da nossa página, vamos fazer a importação do arquivo de estilos.
+
+ <link href="style.css" rel="stylesheet"/>
+
+*Class e Id - Definição e utilidades
+
+Para fazer a estilização na CSS, precisamos utilizar seletores. Apesar das atualizações e das especificações da CSS, as formas de seleção para a aplicação de estilos continuam as mesmas. Elas são:
+
+através de uma class;
+
+através de uma id;
+
+através das tags;
+
+através do atributo de um elemento.
+
+
+*Utilizar class é muito mais complicado, pois uma class é utilizada quando é necessário aplicar um estilo para mais de um  elemento.
+
+ Ela também serve para a aplicação de estilos mais genéricos, como uma cor ou tamanho de fonte. A class é muito presente nos frameworks para componentes.
+
+ Lembrando que um elemento pode ter mais de uma class.
+
+ Para aplicar uma class, é necessário colocar um ponto na frente do nome que será dado para ela.
+
+*Id
+
+A id também é muito presente nessa aplicação. A diferença é que ela só será utilizada quando apenas um estilo for necessário, porque um elemento não pode ter mais de uma id. Então, quando não houver repetições, deve-se utilizar a id.
+
+Para aplicar uma id, é necessário colocar uma hashtag na frente do nome que será dado para ela.
+
+*Seleção por atributo
+
+ Quando percebe-se que não há a necessidade de usar uma id ou class e se o elemento tiver um atributo, a seleção pode ser feita através desse. Assim, se combina elementos baseados no valor de um atributo dado.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

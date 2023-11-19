@@ -1,0 +1,129 @@
+*História e função do JavaScript
+
+Em 1995, Brendan Eich (1961- ) criou a linguagem de programação JavaScript. Originalmente, ela era denominada "Live Script" pela empresa Netscape. 
+
+Seu objetivo inicial era validar formulários HTML, porém, atualmente, JavaScript é bastante utilizada pelo client-side, ou seja, uma linguagem executada no computador do usuário.
+
+*Função da linguagem JavaScript
+
+A principal função da linguagem JavaScript é permitir ao programador implementar itens mais complexos em um site. 
+
+Imagine que você acessa um site, insere seus dados e clica no botão “calcular”. Então, ele calcula o seu Índice de Massa Corporal (IMC), retornando um valor no final. Essa tarefa foi uma função escrita em JavaScript.
+
+Então, há um código JavaScript operando em todo site que permite que o usuário interaja com ele. Páginas estáticas são mais prováveis de não ter essa linguagem em sua construção, por exemplo, um site com apenas um texto estático e nenhum tipo de interação.
+
+*Características
+
+Normalmente, em uma linguagem de programação convencional, quando um código é criado e colocado para executar na máquina, ele funcionará. No entanto, se tentar rodar o mesmo código em uma máquina de sistema operacional diferente, é bem provável que ele não opere.
+
+Isso acontece porque cada sistema operacional tem seu jeito específico de interpretar o seu código. Mas, a linguagem JavaScript independe de plataforma, pois seus os comandos são interpretados pelo browser (navegador) do próprio usuário.
+
+Imagine que o seu navegador traduz para o seu sistema operacional. Com JavaScript, não é necessário fazer um código próprio para cada tipo de sistema.
+
+Um exemplo prático é o que acontece com aplicativos de celular que são programados duas vezes: uma para funcionar no sistema iOS (Apple) e outra no Android (Google).
+
+*A trindade das linguagens
+
+A trindade de linguagens para o desenvolvimento web front-end é composta pelas linguagens HTML, CSS e JavaScript. HTML é responsável pela estrutura da página, CSS, pela parte de edição da página e JavaScript, por toda a lógica envolvida na página web.
+
+Comparando com o corpo humano, HTML é o esqueleto, CSS, a pele e JavaScript, o cérebro.
+
+*A importância de JavaScript em navegadores
+
+Uma das características da linguagem JavaScript é que ela é leve e interpretada. Ou seja, o código é executado e o valor é retornado imediatamente.
+
+Dessa forma, ela tem uma etapa a menos quando comparada às linguagens compiladas, nas quais o código é agrupado e, depois, executado pelo computador.
+
+O navegador recebe o código em JavaScript em sua forma de texto original e executa a partir do seu próprio código, seguindo a ordem do script  de cima para baixo.
+
+Os navegadores mais modernos conseguem utilizar uma técnica de compilação chamada just-in-time. Ela melhora o desempenho, fazendo com que o código seja executado mais rapidamente, pois ele só é executado quando necessário, ou seja, apenas quando o usuário faz alguma ação no site.
+
+*JavaScript client-side
+
+Nos navegadores, a linguagem JavaScript também pode desenvolver o front-end, o que torna possível programar uma página web utilizando só o lado do cliente.
+
+O código é executado a partir da máquina do cliente, não sendo necessário consultar os servidores. Assim, em sites menos complexos, isso facilita para que o programador possa trabalhar a partir dos seus navegadores.
+
+*Front-end x Back-end
+
+A linguagem JavaScript foi criada para as demandas de front-end, mas, devido ao avanço da tecnologia e às novas necessidades, surgiu a ideia de utilizá-la para a comunicação com o servidor, utilizando o Node.js para a programação back-end.
+
+Front-end é a parte visual do site, onde conseguimos interagir, como botões, gráficos, entre outros.
+
+Back-end é o código por trás da aplicação e que faz a comunicação com os servidores e os bancos de dados.
+
+*Compatibilidade
+
+Uma vantagem muito boa para os navegadores é que a linguagem JavaScript tem um alto grau de compatibilidade. Essa característica é muito importante, pois certas linguagens ao serem programadas podem ser incompatíveis com o sistema que você está implementando. Como consequência, seu código não irá funcionar e, provavelmente, você terá que procurar uma nova linguagem compatível para começar todo o código de novo.
+
+Para finalizar, JavaScript facilita a conexão entre HTML e CSS para desenvolver os sites web.
+
+HTML funciona como o esqueleto do site, CSS como uma roupa (insere cores, fontes etc.) e a linguagem JavaScript serve para provocar interações ou respostas.
+
+Para desenvolver um site utilizando estas tecnologias, basta utilizar as tags padrões de HTML para poder formatar e organizar conteúdos web e programar em JavaScript.
+
+*Diferenciar os ambientes existentes para desenvolvimento em JavaScript
+
+Agora que já sabemos algumas características importantes da linguagem JavaScript, vamos aprender sobre as IDEs e os editores de código. Afinal, são eles que proporcionam um ambiente de desenvolvimento de códigos para a criação de sites e programas.
+
+*O que são IDEs?
+Uma Integrated Development Environment (IDE) é um ambiente de desenvolvimento com várias ferramentas que auxiliam o programador na criação de seus códigos. 
+
+*Linguagens com IDE
+
+As IDEs são vinculadas a uma linguagem, ou seja, umas são focadas em JavaScript, outras em Python, Java etc. Isso gera acesso a várias funcionalidades voltadas para a linguagem que o programador escolheu. Por exemplo, o acesso rápido a algumas funções e bibliotecas.
+
+*Editores de código
+
+Diferente das IDEs, os editores de código-fonte são ambientes de desenvolvimento que NÃO estão focados em uma linguagem específica.
+
+Eles podem ser usados para mais de uma linguagem ou podem ser modificados pelo programador para servir quantas linguagens ele quiser.
+
+Basicamente, o editor de código é um editor de texto com funcionalidades adicionais.
+
+*Como montar o seu ambiente?
+
+Para escolher um ambiente, você precisa pesquisar, de acordo com suas necessidades, quais IDEs ou editores de código são melhores para a linguagem que você irá programar. 
+
+Por exemplo, um editor de código muito utilizado para a linguagem JavaScript é o VS Code. Porém, para essa linguagem, também é possível usar uma versão on-line das IDEs e desenvolver seus códigos.
+
+*Versatilidade
+
+Os editores de código são customizáveis, tanto esteticamente como funcionalmente. Como já mencionado, existem aqueles que podem servir de ambiente de desenvolvimento para qualquer linguagem, basta configurar.
+
+Portanto, as IDEs e os editores são ferramentas de grande importância para o desenvolvimento do seu código.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
