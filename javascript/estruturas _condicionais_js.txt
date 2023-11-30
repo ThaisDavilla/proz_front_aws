@@ -1,0 +1,248 @@
+Estruturas Condicionais em JS
+
+*Sintaxe
+Para escrever estruturas condicionais em JS precisamos de:
+ Pelo menos uma palavra reservada (if, else)
+
+ Uma condição a ser testada entre parênteses (ex. (3 > 1);)
+
+ Um bloco de código a ser exectuado entre chaves ‘{ }’
+
+No seguinte exemplo, temos uma variável que guarda o valor de uma nota, e uma estrutura condicional que imprime uma mensagem dependendo da veracidade da condição:
+
+let nota = 9;
+
+if(nota >= 8){
+
+    console.log("Ótimo trabalho!");
+
+}
+
+*Obs. Já que as chaves determinam o começo e fim do bloco de código a ser exectutado, a indentação do bloco não é obrigatória mas ainda é uma boa prática, que visa facilitar a leitura do código.
+
+Para definirmos blocos de código a serem executados caso a condição não for verdadeira, usamos a palavra reservada else e as chaves, porém, não é mais necessário o uso de parênteses:
+
+let nota = 7;
+
+if(nota >= 8){
+
+    console.log("Ótimo trabalho!");
+
+} else {
+
+    console.log("Precisa melhorar");
+
+}
+
+*Caso quisermos definir duas ou mais condições a serem avaliadas, usamos a junção de ambas as palavras definidas (else if), um par de parênteses com a nova condição, e o bloco de código a ser exectuado entre chaves. Vale lembrar que nosso código será lido de cima para baixo, portanto, a ordem em que as condições são escritas faz diferença, e o bloco de código else precisa sempre ser o último:
+
+let nota = 6;
+
+if(nota >= 8){
+
+    console.log("Ótimo trabalho!");
+
+} else if(nota >= 6){
+
+    console.log("Bom trabalho");
+
+} else {
+
+    console.log("Precisa melhorar");
+
+}
+
+*Condicionais e booleanos em JS
+
+As condições das nossas estruturas condicionais podem incluir números (como nos exemplos anteriores), incluir strings:
+
+let meuInstrumento = "violão";
+
+if (meuInstrumento == "piano"){
+
+    console.log("Você é um pianista!");
+
+} else {
+
+    console.log("Você não é um pianista");
+
+}
+
+// Imprimirá 'false' pois meuInstrumento não é 'piano'
+
+
+*E também podem incluir valores booleanos:
+
+let finDeSemana = false;
+
+if(finDeSemana == true){
+
+    console.log("Vai descansar!");
+
+} else {
+
+    console.log("Temos que trabalhar");
+
+}
+
+// Imprimirá 'Temos que trabalhar'
+
+
+*Contudo, JavaScript nos permite escrever a condição entre parênteses (finDeSemana == true) de uma forma mais simples: apenas colocando o nome da variável. O seguinte exemplo funcionará exatamente igual ao código anterior:
+
+let finDeSemana = false;
+
+if(finDeSemana){
+
+    console.log("Vai descansar!");
+
+} else {
+
+    console.log("Temos que trabalhar");
+
+}
+
+// Imprimirá 'Temos que trabalhar'
+
+
+*let finDeSemana = false;
+
+if(finDeSemana){
+
+    console.log("Vai descansar!");
+
+} else {
+
+    console.log("Temos que trabalhar");
+
+}
+// Imprimirá 'Temos que trabalhar'
+
+
+let finDeSemana = false;
+
+if(!finDeSemana){
+
+    console.log("Temos que trabalhar.");
+
+} else {
+
+    console.log("Vai descansar!");
+
+}
+
+// Imprimirá 'Temos que trabalhar'
+
+
+*Perceba que como agora o primeiro bloco condicional está verificando se a variável finDeSemana é falsa, a mensagem impressa é o que fazer num dia de semana. Já como o segundo bloco de código (no else) que é executado caso finDeSemana for verdadeiro, imprime agora a mensagem relativa ao final de semana. Para efeitos práticos, este código funciona exatamente igual aos dois códigos anteriores. Este é um exemplo de como podemos chegar no mesmo resultado escrevendo algoritmos e códigos distintos.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

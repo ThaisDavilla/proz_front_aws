@@ -1,0 +1,116 @@
+*Conexão com HTML
+
+Existem duas formas de inserir código JavaScript nas nossas páginas web. Uma delas é usando uma tag específica para JS no arquivo HTML. A outra forma é criando um arquivo separado com todos nossos códigos JS, e depois “conectar” esse arquivo com nosso arquivo HTML. Embora a segunda alternativa seja a prática mais recomendável, vamos dar uma olhada em ambas.
+
+
+*Inserir JS no arquivo HTML
+
+Da mesma forma que temos diversas tags para inserir e organizar conteúdos nos nossos arquivos HTML, temos também uma tag com a função de encapsular código JavaScript: a tag <script> </script>. Tudo o que for escrito entre as tags de abertura e fechamento deverá seguir as regras de sintaxe do JS.
+
+Comecemos inicializando nosso projeto com os seguintes passos: 
+
+Crie uma nova pasta chamada primeiro-js
+
+Abra ela no VSCode
+
+Crie o documento index.html, e defina a estrutura base HTML nele com o atalho ‘!’
+
+Entre as tags de abertura e fechamento do body, vamos incluir as tags de abertura e fechamento: <script> </script>
+
+<body>
+
+  <script>
+
+ 
+
+  </script>
+
+</body>
+
+Dentro das tags de abertura e fechamento do script, vamos usar a função console.log para imprimir a frase “Hello World”
+
+<body>
+
+  <script>
+    console.log(“Hello world”);
+
+  </script>
+
+</body>
+
+*Agora pensemos: onde será que foi parar nosso “Hello world”? Já que JavaScript foi criado como uma linguagem de programação para a web, os responsáveis por “interpretar” nossos códigos são os navegadores web. Salvemos então as mudanças no arquivo, e usemos a ferramenta GoLive da extensão Live Server para abrir nosso arquivo HTML no navegador.
+
+*No navegador, veremos apenas uma tela em branco. Precisamos abrir as DevTools fazendo click direito em qualquer parte do espaço em branco e selecionar a opção inspecionar, ou com o atalho de teclado F12. Na barra de navegação superior das DevTools selecionamos a opção Console (ou “Consola” em português), caso ela não aparecer nas opções disponíveis, basta clicar nas duas setas virada à direita para abrir um menu e escolher Console da lista de opções.
+
+*Na aba de Console, agora deveríamos estar vendo o “Hello World” que imprimimos com a função console.log. À direita dele, temos também a mensagem “index.html:11”, que nos avisa que a função console.log foi executada na linha 11 do arquivo index.html.
+
+*Podemos testar novamente nosso código JS, voltando ao VSCode, criando duas variáveis dentro das tags script, e imprimindo a soma delas.
+
+<body>
+
+  <script>
+
+    console.log(“Hello world”);
+
+    let num1 = 15;
+
+    let num2 = 27;
+
+    console.log(num1 + num2)
+
+  </script>
+
+</body>
+
+**Conectar arquivos JS com arquivos HTML
+Da mesma forma que escrevemos as estilizações do nosso site num arquivo CSS separado, e depois “conectamos” ele com nosso arquivo HTML usando a tag link, é uma boa prática escrever todos nossos códigos JS num arquivo à parte e depois conectâ-lo com seu respectivo arquivo HTML. Dessa forma, conseguimos trabalhar com “a tríade do Front End” em três arquivos separados: os arquivos HTML para definir o conteúdo e a estrutura do nosso site; os arquivos CSS para estilizar esses conteúdos; e os arquivos JS para implementar interatividade e as diversas funcionalidades da nossa página web.
+
+Comecemos criando um novo arquivo chamado script.js. Copiemos nele todo o código que escrevemos entre as tags script, e salvemos as mudanças no arquivo.
+
+Agora devemos voltar ao arquivo index.html e escrever a seguinte linha entre as tags de abertura e fechamento do head:
+
+<script src="./script.js" defer></script>
+
+*Vejamos como esta linha foi escrita:
+
+Primeiro, temos as tags de abertura e fechamento <script> </script> sem conteúdo algum entre delas, pois não estaremos usando elas para escrever código JS, e sim para conectar nosso arquivo HTML com um arquivo de extensão .js
+
+Depois, incluímos o atributo src=”” que vem de “source” (“origem” em inglês), que recebe uma string com a rota para nosso arquivo JS. Neste caso, a string começa com um ponto e barra ‘./’ indicando que procuraremos pelo arquivo na mesma pasta onde está o arquivo HTML, e depois da barra incluímos o nome do arquivo, resultando em: src=”./script.js”
+
+Finalmente, incluímos o atributo defer, que faz com que o navegador execute o arquivo JS apenas depois que o arquivo HTML tenha sido baixado e analisado.
+
+Se salvamos as mudanças em ambos arquivos e voltamos ao navegador, talvez vejamos uma mensagem de erro no terminal, avisando que a variável num1 já foi declarada previamente. Isto ocorre caso não tenhamos apagado o código da tag script dentro do body do nosso arquivo HTML. Contudo, ao invés de apagar esse conteúdo, mudemos apenas os nomes das variáveis no arquivo script.js para demonstrar melhor o uso do atributo defer. Lembra de mudar o nome das variáveis tanto na declaração delas, quanto na hora de chamá-las dentro do console.log.
+
+Após salvar as mudanças, podemos voltar ao navegador e observar o terminal:
+
+Temos as mesmas duas linhas sendo impressas no terminal duas vezes, contudo, as duas linhas de cima foram executadas primeiro, vindo do arquivo index.html, e as duas últimas linhas foram executadas depois, vindo do arquivo script.js. Se você remover o atributo defer da tag script, e salvar as mudanças, pode perceber que dessa vez as linhas de cima (que são executadas primeiro), estão vindo do arquivo script.js, e depois delas são executadas as linhas vindas do próprio arquivo HTML.
+
+*A ordem em que os arquivos são executados pode não parecer importante neste momento, porém, nas próximas aulas entenderemos melhor a importância do atributo “defer” e de carregar nosso código JavaScript depois do conteúdo HTML.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
