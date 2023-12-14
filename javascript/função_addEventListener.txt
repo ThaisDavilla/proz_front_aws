@@ -1,0 +1,254 @@
+Função .addEventListener()
+
+*Introdução
+Até o momento, aprendemos algumas ferramentas e recursos para manipular sites usando a linguagem JavaScript de forma manual. Contudo, sabemos que, para fazer um site dinâmico com interação do usuário, devemos programar diversos eventos para serem acionados pelo próprio usuário, como clicar em um botão, apertar uma tecla, preencher um formulário etc. Para isso, usamos o método addEventListener().
+
+Nesta e nas próximas aulas, aprenderemos a como trabalhar com esses eventos. Vamos lá?
+
+*Setup de arquivos
+
+Para demonstrar a função ou método addEventListener, usaremos como exemplo um projeto simples com dois arquivos: index.html e script.js. O arquivo index.html segue o padrão de estrutura de base HTML, ou seja, possui dois elementos dentro da tag <body></body>.
+
+<h1>0</h1>
+
+<button>+1</button>
+
+
+*Além disso, dentro da tag <head></head>, incluímos uma outra para conectar o arquivo HTML com o arquivo script.js, que está na mesma pasta que o arquivo index.html.
+
+<script src="script.js" defer></script>
+
+O arquivo script.js está vazio, e é nele onde aprenderemos a usar o addEventListener.
+
+*Conceito de eventos
+Sempre que desejarmos implementar a interatividade nas nossas páginas, devemos nos fazer três perguntas: “Quem?”, “O quê?” e “Quando?”.
+
+Antes de entendermos cada uma das etapas, vamos imaginar que Sylvia é programadora de uma empresa de vendas e sua gestora solicitou a construção de um site para recolher informações dos clientes. Vamos observar como Sylvia utilizará as três perguntas para realizar essa ação?
+
+*Quem?
+Se refere aos elementos HTML que participam da interatividade. Geralmente, precisamos de, no mínimo, dois elementos: o que ativará a mudança e o que sofrerá as alterações.
+
+Por exemplo, no caso de Sylvia, ela precisará criar botões de Enviar e campos no site para os usuários inserirem as informações.
+
+*O quê?
+Se refere ao comportamento da interatividade em si. Nessa etapa, usaremos a lógica de programação para descrever aquilo que deve acontecer com os elementos definidos na primeira etapa.
+
+No caso de Sylvia, ela precisará construir códigos que verifiquem se algum dos campos disponibilizados, onde os usuários inserem seus dados, está vazio. Caso sim, os botões de Enviar devem ser bloqueados. Mas, se estiverem preenchidos, os botões de Enviar devem ser liberados.
+
+*Quando?
+Se refere ao evento que acionará o comportamento definido na etapa anterior.
+
+No nosso exemplo, Sylvia deverá garantir que o envio do formulário, ou o bloqueio dele, aconteça assim que o usuário inserir seus dados corretamente.
+
+*Os elementos
+Agora que Sylvia resolveu o desafio dela, está na hora de resolvermos o nosso!
+
+Faremos um site simples, com um número e um botão que incrementa esse valor em um cada vez que clicarmos no botão. Em outras palavras, o site começa exibindo o número zero, mas, ao clicar no botão, o valor do número será 1 e, ao clicar novamente, o valor será 2, pois sempre estará adicionando um.
+
+
+*Começaremos respondendo à pergunta “Quem?”. Para isso, iremos capturar os elementos do DOM que usaremos no nosso projeto.
+
+Nesse caso, queremos capturar o elemento h1, que exibirá o número, e o elemento button, que ativará o comportamento.
+
+let numero = document.querySelector("h1");
+
+let botao = document.querySelector("button");
+
+*Além desses dois elementos, declaramos uma variável contagem para salvar o valor que será incrementado. Isso é necessário pois o número 0 exibido no nosso arquivo HTML é uma string com o caractere “0”, não um valor do tipo number ou float.
+
+Existem outras formas de chegar no resultado desejado, mas, nesse exemplo, seguiremos a abordagem:
+
+let numero = document.querySelector("h1");
+
+let botao = document.querySelector("button");
+
+let contagem = 0;
+
+*O comportamento
+
+Para definir o comportamento desejado, encapsulamos nosso código em uma função chamada adicionarUm. Começamos declarando ela com a estrutura padrão de uma função na linguagem JavaScript, ou seja, a função estará localizada embaixo das três variáveis criadas na etapa anterior.
+
+function adicionarUm(){
+
+}
+
+*Entre as chaves, descreveremos o comportamento que queremos que o nosso site realize. Nesse caso, a lógica será dividida em dois passos: aumentar o valor da variável contagem em 1 e, depois, exibir o seu novo valor como o texto do elemento numero, usando a propriedade innerText.
+
+function adicionarUm(){
+
+  contagem = contagem + 1;
+
+  numero.innerText = contagem;
+
+}
+
+*Até agora, declaramos apenas nossas funções. Portanto, mesmo salvando as mudanças no arquivo, não vemos diferença no navegador. Entretanto, podemos testar o funcionamento da função executando-a manualmente, ou seja, chamando-a logo embaixo da sua declaração e escrevendo seu nome seguido de parênteses. Dessa forma:
+
+function adicionarUm(){
+
+  contagem = contagem + 1;
+
+  numero.innerText = contagem;
+
+}
+
+adicionarUm();
+
+
+
+*O comportamento
+Agora, depois de salvar as mudanças e voltar ao navegador, devemos ver o número 1 no lugar do inicial 0, pois nossa função foi executada uma vez.
+
+Após o teste, podemos apagar a execução manual da nossa função.
+
+
+*O evento
+Para permitir que um usuário execute a função que criamos, precisamos usar o método addEventListener(). No nosso exemplo, o elemento responsável por disparar o evento é o botão +1, então, começaremos adicionando o método nele, logo embaixo da declaração da função adicionarUm.
+
+Para fazer isso, basta escrever o nome do elemento, seguido de um ponto, o nome do método e um par de parênteses. Dessa forma:
+
+botao.addEventListener();
+
+
+*O método addEventListener() é uma função que precisa de, no mínimo, dois argumentos para funcionar. O primeiro argumento é uma string que define o tipo de evento que acionará nossa função. No nosso exemplo, usaremos a string click.
+
+O segundo argumento deve ser uma função com o comportamento que queremos executar. No nosso exemplo, já declaramos nossa função na etapa anterior, portanto, basta escrever o seu nome sem os parênteses. Assim:
+
+botao.addEventListener("click", adicionarUm);
+
+*Após salvar as mudanças e voltar no navegador, nosso contador deve estar funcionando da forma esperada. Ele precisa exibir um número inicial e aumentá-lo em 1 cada vez que clicamos no botão +1.
+
+*Código JavaScript completo do exemplo
+Segue o código completo na linguagem JavaScript que usamos nesse exemplo:
+
+let numero = document.querySelector("h1");
+
+let botao = document.querySelector("button");
+
+let contagem = 0;
+
+function adicionarUm(){
+
+  contagem = contagem + 1;
+
+  numero.innerText = contagem;
+
+}
+ 
+
+botao.addEventListener("click", adicionarUm);
+
+
+*Alternativa para organização do código
+Embora a organização do código proposta nesse material seja muito útil pela perspectiva didática,  encontraremos outras formas de organização no dia a dia.
+
+*Uma alternativa muito comum é, ao invés de declarar a função separadamente, escrevê-la como uma função anônima dentro do parênteses do addEventListener.
+
+let numero = document.querySelector("h1");
+
+let botao = document.querySelector("button");
+
+let contagem = 0;
+ 
+
+botao.addEventListener("click", function(){
+
+  contagem = contagem + 1;
+
+  numero.innerText = contagem;
+
+});
+
+
+*Nesses casos, também há o uso de arrow functions para declarar a função anônima, substituindo o trecho function( ) por ( ) =>. Dessa forma:
+
+let numero = document.querySelector("h1");
+
+let botao = document.querySelector("button");
+
+let contagem = 0;
+
+botao.addEventListener("click", () => {
+
+  contagem = contagem + 1;
+
+  numero.innerText = contagem;
+
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
