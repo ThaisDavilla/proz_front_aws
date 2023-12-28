@@ -10,12 +10,16 @@ O curso propõe que desenvolvamos em grupo um PI de nossa escolha.
 Meu grupo é composto por quatro pessoas e decidimos construir um blog falando sobre TI e suas diversas áreas.
 
 
-**Ferramentas utilizadas:**
+**Ferramentas e tecnologias utilizadas:**
  - Discord - Para comunicação
- - VS Code - IDE
+ - VS Code - Editor de código
  - Git - Versionamento
+ - HTML5
+ - CSS3
+ - JavaScript
 
 [Clique aqui para ver o repositório do nosso blog.](https://github.com/BarachoSilva/codigo-e-cafe)
+[Conheça o nosso blog!](https://barachosilva.github.io/codigo-e-cafe/index.html)
 
 
 * **Projetos individuais desenvolvidos durante o curso:**
