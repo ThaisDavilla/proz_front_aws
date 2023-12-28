@@ -19,6 +19,9 @@ Meu grupo é composto por quatro pessoas e decidimos construir um blog falando s
  - JavaScript
 
 [Clique aqui para ver o repositório do nosso blog.](https://github.com/BarachoSilva/codigo-e-cafe)
+
+
+
 [Conheça o nosso blog!](https://barachosilva.github.io/codigo-e-cafe/index.html)
 
 
