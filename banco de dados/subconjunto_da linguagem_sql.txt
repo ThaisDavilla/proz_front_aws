@@ -1,0 +1,220 @@
+Subconjunto da linguagem SQL
+
+*SQL - linguagem estruturada de consultas
+
+SQL é uma linguagem estruturada de consultas e a mais utilizada pelos SGBDs relacionais.
+
+Ela pode realizar consultas simples ou complexas e permite aos usuários a criação das bases de dados e suas estruturas relacionais correspondentes.
+
+Lembrando que uma base de dados pode ser administrada com a criação, eliminação e alteração dos dados.
+(https://www.w3schools.com/sql/)
+
+A SQL foi projetada pela IBM nos anos 1970. No final dessa década, o primeiro banco de dados baseado nessa linguagem foi disponibilizado comercialmente.
+
+Em 1980, os institutos ANSI e ISO publicaram a sua primeira versão padronizada. Além disso, há  evoluções dessa linguagem, como a versão SQL-92 e a SQL-99.
+
+*SQL e seus subconjuntos
+
+A SQL é um conjunto de linguagens, onde cada uma possui comandos específicos para executar diferentes funções em um banco de dados. As cinco linguagens fundamentais, os subconjuntos da SQL, que serão abordadas são: DDL, DML, DQL, DCL e DTL.
+
+ -- DDL é a responsável pela definição dos dados. Seus principais comandos são: create, alter e drop;
+
+ -- DML é  a responsável pela manipulação dos dados. Seus principais comandos são: insert, update e delete;
+
+ -- DQL é a linguagem de consulta de dados. Seu principal comando é o select; 
+
+ -- DCL é a responsável pelo controle dos dados. Seus principais comandos são: grant e revoke;
+
+ -- DTL é a linguagem de transação de dados. Seus principais comandos são: start transaction, commit e rollback.
+
+A seguir, veremos de forma prática como utilizar os comandos mais importantes disponíveis nesses subconjuntos.
+
+*DDL – linguagem de definição de dados
+
+O comando create é utilizado para criar um banco de dados ou uma estrutura de banco de dados, como tabelas e índices.
+
+Exemplo:
+CREATE DATABASE curso_computacao;
+
+O comando create database cria um banco de dados chamado curso_computacao no ambiente MySQL.
+(https://doc.4d.com/4Dv19/4D/19/CREATE-DATABASE.300-5434536.pt.html)
+
+Depois de criar o banco, é preciso utilizar o comando use. Ele serve para selecionar um banco de dados dentro do ambiente MySQL.
+
+Exemplo:
+USE curso_computacao;
+
+Ao executar esse comando, o banco estará pronto para uso.
+
+Aqui, cria-se uma tabela de gestores dentro do banco de dados com o comando create table gestores();. 
+
+Os tipos de dados e atributos ficam dentro de parênteses. Além disso, cada atributo possui um comando para não receber um valor nulo, ou seja, os dados não podem deixar de ser informados.
+
+A chave primária é o id (o identificador da tabela gestores).
+(http://www.bosontreinamentos.com.br/mysql/mysql-tipos-de-dados-comuns-09/)
+
+Os atributos são definidos e seus tipos de dados precisam ser declarados. Números inteiros são representados por int, palavras são guardadas no tipo varchar e números decimais são guardados em double.
+
+No nosso exemplo, a primary key converte o id em chave primária da tabela.
+(https://www.w3schools.com/sql/sql_primarykey.ASP)
+
+Com o banco e a primeira tabela criados, o nome da tabela será alterado. Para isso, o comando rename é usado.
+
+Exemplo:
+RENAME TABLE gestores TO professores;
+
+Assim, modificamos o nome da tabela gestores para professores.
+
+Se for alterar um campo dentro da tabela, você deve usar o comando alter. 
+
+Exemplo: 
+ALTER TABLE professores CHANGE COLUMN nome nome_prof varchar(45) not null; 
+
+Assim, a coluna nome da tabela professores foi alterada para nome_prof.
+
+Porém, se for preciso excluir um campo da tabela do banco de dados, utilizamos o comando drop.
+
+Exemplo:
+ALTER TABLE nome_da_tabela DROP COLUMN nome_da_coluna.
+
+Com esse comando, também é possível excluir definitivamente uma tabela do banco.
+
+Exemplo:
+DROP TABLE nome_da_tabela;
+
+O comando insert é utilizado para inserir dados nessa tabela. Nos próximos exemplos, serão inseridos: o código de identificação do professor, o nome dele, o seu salário e a aula (trilha) que ministra. Observe:
+
+INSERT INTO professores (id, nome_prof, salario, trilha) VALUES (1, 'Kelvin', 4000, 'Banco de dados distribuídos');
+
+INSERT INTO professores (id, nome_prof, salario, trilha) VALUES (2, 'Johny', 3400, 'Java1');
+
+INSERT INTO professores (nome_prof, salario, trilha) VALUES ('Flávio', 3500, 'Banco de dados 1');
+
+INSERT INTO professores (nome_prof, salario, trilha) VALUES ('Fábio', 4700, 'Governança em TI');
+
+INSERT INTO professores (nome_prof, salario, trilha) VALUES ('Josiel', 4800, 'Banco de dados 2');
+
+*Comando select
+
+Para projetar na tela os dados inseridos nos campos de uma tabela, utilizamos o select. 
+
+Ele é o comando mais utilizado na criação de um banco de dados e pertence à DQL, a linguagem de consultas de dados. 
+
+Por isso, para exemplificar esse comando, uma tabela será apresentada com o nome de cinco professores, os seus salários, os seus códigos de identificação (ids) e as suas trilhas.
+
+Exemplo:
+SELECT * FROM professores; 
+
+É possível pesquisar informações específicas da tabela, utilizando o comando SELECT*FROM com o comando where.
+
+Exemplo:
+SELECT * FROM professores WHERE salario > 4000;
+
+Dessa forma, apenas os dados dos professores que têm salário acima de R$4.000 serão exibidos.
+
+Outro exemplo:
+SELECT * FROM professores WHERE nome_prof = 'Josiel';
+
+Aqui, só serão exibidos os dados do professor Josiel.
+
+Exemplo:
+
+SELECT * FROM professores WHERE id = 3;
+
+Assim, serão exibidos os dados do professor que tem o id = 3, o professor Flávio.
+
+*Comando delete
+
+Enquanto o comando drop, que vimos anteriormente, exclui estruturas de um banco de dados, o delete elimina apenas os dados e registros das tabelas.
+
+Para excluir os dados de um professor com id = 4, observe o exemplo:
+
+DELETE FROM professores WHERE id = 4;
+
+Assim, os dados do professor com id = 4 não aparecem mais na tabela.
+
+*Comando update
+
+Já para atualizar uma informação, é preciso usar o comando update. Por exemplo, para o salário do professor de id = 1 receber um aumento de 10%:
+
+UPDATE professores SET salario = salario * 1.1 WHERE id = 1;
+
+Nesse caso, o salário do professor Kelvin aumentará.
+(https://www.w3schools.com/sql/sql_update.asp)
+
+O salário do professor Kelvin foi atualizado e ele passou a ganhar R$4.400, quando antes recebia R$4.000.
+
+*Criando nova tabela no banco
+
+Para incrementar o banco do nosso exemplo, será inserida uma tabela automóveis, que deixará registrado os dados dos carros dos professores:
+
+ - A chave primária da tabela será o identificador;
+
+ - Teremos um código id (identificador) para cada professor;
+
+ - O modelo ou marca do automóvel deve ser definido com até 45 caracteres;
+
+ - A placa do automóvel deve ser definido com até dez caracteres;
+
+ - A tabela possuirá uma chave estrangeira, que é o id da tabela professores associada ao professor_id dessa tabela, para fazer referência a qual professor o carro pertence.
+
+*Inserindo dados na tabela automóveis
+
+Agora, iremos inserir dados na tabela de automóveis.
+
+INSERT INTO automoveis (professor_id, veiculo, placa) VALUES (1, 'Carro', 'KLP-1234');
+
+INSERT INTO automoveis (professor_id, veiculo, placa) VALUES (1, 'Carro', 'KLB-4567');
+
+SELECT * FROM automoveis ;
+
+Observe que foi inserido dois carros para o professor com id = 1. 
+
+*Atualizando dados da tabela automóveis
+
+Para atualizar essa informação contida na tabela, utilizamos o comando update.
+
+UPDATE automoveis SET professor_id = 5 WHERE id = 2;
+
+SELECT * FROM automoveis ;
+
+Assim, o segundo veículo do professor id = 1 foi mudado para o professor do id = 5.
+
+*Comando union
+
+Para unir os dados das tabelas, podemos utilizar o comando union.
+
+Exemplo:
+SELECT * FROM professores WHERE nome_prof = 'Kelvin'
+
+UNION
+
+SELECT * FROM automoveis WHERE id = 1;
+
+Nessa união, temos os dados do professor Kelvin e do carro que ele possui. Assim, com esse comando, os dados que são armazenados em tabelas diferentes podem ser apresentados juntos.
+
+*Comandos para manipulação de dados
+
+Usando os subconjuntos da linguagem SQL, conseguimos criar um banco de dados, inserir tabelas, adicionar dados e fazer diversas outras manipulações. Dessa forma, podemos compreender como funciona o banco de dados no mundo real.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

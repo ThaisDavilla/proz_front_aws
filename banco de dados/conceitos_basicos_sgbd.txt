@@ -1,0 +1,114 @@
+Conceitos básicos de SGBD
+
+O SGBD é um conjunto de aplicações que possibilita a manipulação e a criação de bancos de dados. 
+
+ 
+Ele tem a função de manter os dados com uma descrição completa e se responsabiliza pela forma como eles são armazenados.
+
+O SGBD fornece um conjunto de aplicações em um banco.
+
+No SGBD, há um catálogo de dados cuja função é armazenar informações contendo a estrutura de cada arquivo, seu tipo, formato de armazenamento e restrições. Elas ficam  armazenadas no dicionário de dados e  são chamadas de metadados.
+
+Uma representação conceitual dos dados deve ser fornecida, sem apresentar muitos detalhes do armazenamento, pelo SGDB ao usuário.
+
+No dicionário de dados, ou catálogo de dados, encontra-se a organização e a estrutura detalhada de cada arquivo. As consultas complexas são realizadas pelos usuários técnicos já familiarizados com o SGBD.
+
+*Características de um SGBD
+
+ - As principais características do SGBD são: 
+
+ - gerenciar grandes volumes de dados;
+
+ - eliminar a redundância e a inconsistência de dados;
+
+ - facilitar o armazenamento e acesso aos dados;
+
+ - garantir múltiplos acessos ao banco;
+
+ - garantir segurança aos dados; e
+
+ - garantir a integridade dos dados.
+
+Para consulta(https://treinamento24.com/library/lecture/read/130632-quais-sao-as-principais-caracteristicas-de-um-sgbd)
+
+*Vantagens do SGBD
+
+Uma vantagem do SGBD é o controle da redundância. Esse problema ocorre no processamento tradicional, em que o mesmo dado pode ser guardado em diferentes tabelas, gerando, assim, redundância e prejudicando o sistema.
+
+Por exemplo, três tabelas com o mesmo dado gera excesso de informações no armazenamento. Com o SGBD, essa redundância é eliminada, o que evita o desperdício de espaço e passa a armazenar um único valor, não o mesmo valor três vezes. Observe na imagem.
+
+Para consulta:
+(https://ehgomes.com.br/banco-de-dados/sgbd-sistema-gerenciador-de-banco-de-dado-o-que-e/)
+
+-- Outras vantagens do SGBD são:
+
+ - compartilhamento de dados;
+
+ - restrição ao acesso não autorizado;
+
+ - representação de relacionamentos complexos entre dados;
+
+ - padronização, flexibilidade e redução de tempo do desenvolvimento de aplicações;
+
+ - disponibilidade de informações atualizadas; e
+
+ - economia de escala.
+
+-- Desvantagens do SGBD
+
+Já as desvantagens são:
+
+ - alto custo;
+
+ - gerenciamento;
+
+ - manutenção.
+
+Deve-se analisar se há a necessidade de adotar o SGBD em uma empresa pequena, já que é preciso adquirir outros softwares de alto custo para serem implementados.
+
+*Arquiteturas do SGBD
+
+A seguir veremos algumas das arquiteturas do SGBD, que são maneiras de intermediar a manipulação de dados para as aplicações utilizadas pelos usuários.
+
+Plataformas centralizadas
+
+​Essa arquitetura é voltada para mainframes (https://tecnoblog.net/responde/o-que-e-mainframe/), tem o seu custo elevado e soluções centralizadas.
+
+Nesse caso, o SGBD é hospedado em um computador com grande capacidade de processamento, onde ficam os emuladores(https://pt.wikipedia.org/wiki/Emulador) para os aplicativos. Sua principal vantagem é permitir a manipulação de um grande volume de dados por parte dos usuários.
+
+ -- Sistemas de computador pessoal
+
+Os computadores pessoais (PC) fazem seus processamentos sozinhos, utilizando o sistema stand-alone. 
+
+No início, esse processamento era pequeno, mas com o crescimento do hardware, possuem excelente capacidade de processamento. 
+
+Os SGBDs atuam como hospedeiros e terminais, usando o padrão Xbase. Sua arquitetura é bem simples e é executada na máquina com um único aplicativo.
+
+ -- Arquitetura cliente-servidor 
+(https://www.canalti.com.br/arquitetura-de-computadores/arquitetura-cliente-servidor)
+
+O processamento é dividido entre dois sistemas, reduzindo o tráfego na rede.
+
+É uma arquitetura bastante popular, onde o cliente pode solicitar um determinado serviço para o servidor, e enquanto o servidor trabalha para encontrar o dado solicitado, o cliente está livre para realizar outras tarefas.
+
+Funciona com o envio de solicitações, o cliente solicita um dado, e o servidor lhe retorna o dado solicitado, através de um hardware, um computador por exemplo.
+
+-- Banco de dados distribuídos 
+(https://www.youtube.com/watch?v=zikG7wACyzc&ab_channel=XPEduca%C3%A7%C3%A3o)
+
+São necessários diversos servidores para distribuir as informações.
+
+Os bancos de dados distribuídos recebem e distribuem informações para diversas aplicações.
+
+
+
+
+
+
+
+
+
+
+
+
+
