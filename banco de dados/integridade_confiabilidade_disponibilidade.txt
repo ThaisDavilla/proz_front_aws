@@ -1,0 +1,66 @@
+Segurança dos dados
+
+É no banco de dados que inúmeras informações de sistemas são armazenadas. Por exemplo, os dados do sistema de uma empresa são guardados em um banco de dados.
+
+Para quem utiliza um banco de dados em sua rotina de trabalho, é importante garantir a segurança dele. Para isso, três pilares devem funcionar adequadamente: integridade, disponibilidade e confiabilidade.
+
+(https://www.devmedia.com.br/conceitos-fundamentais-de-banco-de-dados/1649)
+
+*Pilares da segurança de dados
+***A integridade é a garantia de que os dados alterados no sistema serão retidos em sua forma original.
+
+Esse componente está intrinsecamente relacionado ao controle das modificações do sistema e à preservação total do ciclo de vida dos dados, ou seja, na origem, manutenção e destruição.
+
+(https://www.astera.com/pt/type/blog/data-integrity-in-a-database/)
+
+***Pilares da segurança de dados
+A disponibilidade garante que os dados estejam sempre disponíveis para fins legais.
+
+Portanto, apenas os indivíduos que foram devidamente aprovados terão acesso ao sistema em qualquer momento.
+
+(https://www.telium.com.br/blog/confidencialidade-integridade-e-disponibilidade-os-tres-pilares-da-seguranca-da-informacao)
+
+***A confiabilidade exige a imposição de restrições sobre quem tem acesso aos dados em questão.
+
+Então, apenas indivíduos confiáveis e com uma necessidade legítima de alterar os dados terão acesso a eles, se necessário.
+
+(https://it-eam.com/como-o-monitoramento-de-informacoes-tem-melhorado-a-confiabilidade-dos-dados)
+
+*Importância da segurança
+A segurança do banco de dados é associada às medidas para proteção dos dados. Dessa forma, se evita que o sistema seja manuseado por pessoas indevidas.
+
+ 
+
+O controle dos dados está relacionado à sobrevivência de grandes negócios. Isso porque os dados armazenados podem orientar como um determinado serviço se comporta no mercado, ou facilitar o conhecimento sobre o perfil dos consumidores e ajudar a traçar estratégias competitivas no mercado.
+
+Por isso, existe a necessidade de mantê-los protegidos.
+
+*Garantir a segurança do banco
+
+Para garantir isso, é necessário prestar atenção às evoluções dos sistemas de segurança, como:
+
+--realizar backups de dados periódicos;
+
+--implementar a criptografia no banco;
+
+--ter políticas de senhas fortes.
+
+​Dessa forma, evitamos que pessoas indevidas possam acessar informações importantes e confidenciais do banco de dados.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

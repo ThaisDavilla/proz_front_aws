@@ -1,0 +1,114 @@
+Funções preventDefault() e alert()
+
+*Introdução
+A linguagem JavaScript oferece uma série de funções nativas, ou métodos nativos, para agilizar o nosso fluxo de trabalho. Algumas delas são muito comuns e utilizadas, como o console.log() e o addEventListener().
+
+Nessa aula, entenderemos sobre duas funções nativas da linguagem JavaScript: preventDefault() e alert().
+
+*Setup de arquivos
+Para demonstrar o uso de ambas funções, usaremos como exemplo um projeto simples com dois arquivos: index.html e script.js. O arquivo index.html segue o padrão de estrutura base da HTML, com os seguintes elementos dentro da tag <body></body>:
+
+<h2>Visitar o site da
+
+    <a id="link-proz" href="https://prozeducacao.com.br/" target="_blank">Proz</a>
+
+</h2>
+
+<form action="">
+
+  <input type="text" name="input">
+
+  <button type="submit">Enviar</button>
+
+</form>
+
+O atributo target, com o valor _blank, serve para abrir um link em uma nova aba.
+
+O atributo name garante que a informação do input será enviada.
+
+Os botões do tipo submit servem para enviar as informações preenchidas nos formulários.
+
+*Além disso, dentro da tag <head></head>, incluímos a tag <script src="script.js" defer></script> para conectar o arquivo HTML com o arquivo script.js, que está na mesma pasta do arquivo index.html.
+
+Além disso, dentro da tag <head></head>, incluímos a tag <script src="script.js" defer></script> para conectar o arquivo HTML com o arquivo script.js, que está na mesma pasta do arquivo index.html.
+
+*Função preventDefault()
+A função preventDefault() pode ser traduzida como "impedir o padrão". Ela serve para desativar o comportamento padrão de algum elemento HTML.
+
+Para entender melhor o seu funcionamento, vamos começar abrindo nosso projeto no navegador com a extensão LiveServer. Dessa forma, podemos entender quais são os comportamentos padrões de cada um dos nossos elementos.
+
+O comportamento padrão de um elemento a é navegar para uma determinada URL, seja ela do nosso site ou externa.
+
+No nosso exemplo, ao clicarmos na palavra Proz, seremos direcionados ao site da Proz. Já o comportamento padrão do botão do tipo submit é enviar as informações do nosso formulário. Para testar esse botão, podemos inserir algum texto no input e, depois, clicar no botão Enviar.
+
+*Para impedir o comportamento padrão do link, adicionamos um eventListener ao elemento linkProz. Como o evento que dispara o comportamento padrão do link é o click, o adicionamos como primeiro argumento e uma função anônima como segundo, a qual  tem um argumento evento:
+
+linkProz.addEventListener("click", (e)=> {
+
+ 
+
+})
+
+Dessa forma, depois que salvamos as mudanças e voltamos ao navegador, o nosso link não nos levará para a página da Proz.
+
+Também podemos desativar o comportamento padrão do botão Enviar. Para isso, basta seguir os mesmo passos com o elemento btnSubmit:
+
+btnSubmit.addEventListener("click", (e)=> {
+
+  e.preventDefault()
+
+})
+
+Ao salvar as mudanças, podemos ver que, mesmo preenchendo o input de texto e clicando no botão, nada acontece. A página não recarrega, o input não é reiniciado e a nossa URL permanece a mesma.
+
+*Função alert()
+A função preventDefault() nos ajuda a controlar quais interações queremos fornecer ao nosso usuário e quando queremos liberá-las.
+
+Contudo, se não retornarmos um feedback, o site pode parecer que não está funcionando. Uma forma simples e eficiente de dar esses feedbacks é com a função nativa alert().
+
+As mensagens via alert() são muito comuns para comunicar erros no sistema e para confirmar o envio de informações.
+
+No nosso exemplo, para adicionar uma mensagem de feedback ao clicar no elemento linkProz, chamamos a função alert() embaixo da preventDefault(). Depois, passamos uma string que tenha a mensagem que queremos exibir como argumento. Observe:
+
+linkProz.addEventListener("click", (e)=> {
+
+  e.preventDefault();
+
+  alert("Não foi possível acessar o link");
+
+})
+
+Após salvar as mudanças e voltar ao navegador, uma mensagem de alerta semelhante a da imagem será exibida quando o link for clicado.
+
+*Podemos implementar o mesmo comportamento ao clicar no botão de Enviar. Para isso, é preciso chamar a função alert() depois da preventDefault() e passar como argumento uma string com a mensagem que queremos exibir. Observe o exemplo:
+
+btnSubmit.addEventListener("click", (e)=> {
+
+  alert("Não foi possível enviar os dados do formulário")
+
+  e.preventDefault()
+
+})
+
+*Depois de fazer isso e clicar no botão de Enviar, a mensagem será exibida no navegador:
+
+*Conclusão
+Enviar informações erradas em um formulário pode comprometer seriamente o funcionamento de um sistema. Receber um número de telefone no campo de input de email ou enviar os dados de um formulário com um input de endereço vazio são alguns exemplos de como é importante validar as informações dos nossos formulários.
+
+Imagine se o formulário do sistema dos Correios nos permitisse fazer uma encomenda sem preencher o campo de destinatário. O que você acha que aconteceria?
+
+Interromper o comportamento padrão de um elemento e exibir mensagens de feedback pelo navegador são dois recursos que nos ajudarão a implementar uma camada de segurança nos nossos formulários e evitar problemas.
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,21 @@
+ Elabore um algoritmo para que o usuário, através da entrada de dados, informe os seus  dados pessoais. 
+
+ var nome = "caractere"
+ var endereco = "caractere"
+ var cidade = "caractere"
+ var cpf = numInteiro
+ var rg = numInteiro
+
+ Inicio
+ escreva("Qual seu nome completo? ");
+ leia(nome);
+ escreva("Qual seu endereço completo? ");
+ leia(endereco);
+ escreva("Qual a sua cidade? ");
+ leia(cidade);
+ escreva("Digite apenas os números do seu CPF: ");
+ leia(cpf);
+ escreva(("Digite apenas os números do seu RG: ");
+ leia(rg);
+ escreva(nome, endereco, cidade, cpf, rg);
+ FimAlgoritmo

@@ -1,0 +1,133 @@
+Manipular classes com a propriedade .classList
+
+*Introdução
+A propriedade style é útil quando queremos realizar estilizações menores, ou seja, quando vamos manipular uma propriedade CSS por vez. Porém, se quisermos manipular várias propriedades de uma só vez, é mais prático definir classes com várias regras de estilização e usar a linguagem JavaScript para manipular as classes que cada elemento inclui.
+
+*Setup de arquivos
+Para demonstrar a propriedade classList, usaremos como exemplo um projeto simples com três arquivos: index.html, style.css e script.js.
+
+O arquivo index.html segue o padrão de estrutura base da HTML, com um único elemento dentro da tag <body></body>.
+
+<div class="borda-azul">
+
+    Manipulando listas de classes
+
+</div>
+
+*Além disso, dentro da tag <head></head>, incluímos outras para conectar o arquivo HTML com os arquivos style.css e script.js, que estão na mesma pasta que o arquivo index.html.
+
+<link rel="stylesheet" href="style.css">
+
+<script src="script.js" defer></script>
+
+*Como o arquivo script.js está vazio, é nele que aprenderemos a usar a propriedade classList.
+
+*Para manipular listas de classes com JavaScript, primeiro devemos ir no arquivo script.js, capturar o elemento div do DOM e, por fim, salvá-lo em uma variável.
+
+Para fazer isso, usamos a seguinte linha de código:
+
+let div = document.querySelector("div");
+
+*Verificar se um elemento tem uma classe
+Após isso, use o dot notation para acessar a propriedade classList do elemento que acabamos de salvar. Essa propriedade é um objeto com métodos, que também podemos acessar usando o dot notation.
+
+Agora, vamos usar o método contains(). Ele verifica se um elemento possui ou não uma determinada classe e retorna um valor booleano.
+
+*O método contains() recebe como argumento uma string com o nome da classe. Dessa forma, o retorno será true se o elemento conter essa classe e, caso não a possua, será false.
+
+Nesse exemplo, passaremos o valor borda-azul, salvaremos o valor retornado pelo método em uma variável chamada incluiClasse e, por fim, usaremos a função console.log() para imprimir o resultado.
+
+let div = document.querySelector("div")
+ 
+let incluiClasse = div.classList.contains("borda-azul")
+
+console.log(incluiClasse);
+
+*Verificar se um elemento tem uma classe
+Ao salvar as mudanças e verificar o terminal no navegador, devemos ver o valor true impresso, pois o nosso elemento possui a classe borda-azul.
+
+Vale ressaltar que a string passada nos métodos da classList é composta pelos nomes das classes, não pelos seletores CSS. Portanto, não é necessário colocar um ponto antes do nome da classe, como faríamos com outros métodos, como .querySelector().
+
+*Se substituirmos o valor da string passada como argumento do método contains() para texto-novo e, depois, salvarmos essas mudanças, o valor false será impresso no terminal do navegador, pois o nosso elemento ainda não possui a classe texto-novo.
+
+let div = document.querySelector("div")
+ 
+let incluiClasse = div.classList.contains("texto-novo")
+
+console.log(incluiClasse);
+
+*Adicionando classes
+Para adicionar uma classe ao nosso elemento, vamos usar o método add(). Ele recebe como argumento uma string com o nome da classe que queremos adicionar.
+
+Nesse exemplo, adicionaremos a classe texto-novo, que irá alterar a cor e o peso da nossa fonte.
+
+div.classList.add("texto-novo");
+
+*Depois de salvar as mudanças e conferir o navegador, veremos que o texto da nossa div sofreu as devidas alterações.
+
+div.classList.add("texto-novo");
+
+*Removendo classes
+Para remover classes de um elemento, basta seguir os exemplos anteriores, mas aplicando o método remove().
+
+Dessa vez, removeremos a classe borda-azul, passando ela como argumento do método.
+
+div.classList.add("texto-novo");
+
+div.classList.remove("borda-azul");
+
+*Após salvar as mudanças e voltar ao navegador, veja que a classe borda-azul foi removida e nossa div ficou sem a estilização de borda.
+
+*Alternando classes
+São comuns as situações onde queremos adicionar ou remover uma classe, mas não temos certeza quais classes um elemento possui ou não. Isso é devido à classList do elemento ter sofrido muitas alterações ou porque o site permite o usuário interagir, adicionando ou removendo classes de um determinado elemento.
+
+*Para resolver isso, poderíamos criar uma função que recebe um elemento e o nome de uma classe como parâmetros. Assim, o bloco de código verificaria se o elemento possui ou não a respectiva classe usando o método contains(). Além disso, usaria uma estrutura condicional para aplicar o método remove() caso o retorno seja true, ou add() se for false.
+
+*No momento, nosso elemento de exemplo perdeu a classe borda-azul. Então, se usarmos a função toggle() logo embaixo do bloco de código anterior, passando o nome da classe como variável, teremos o seguinte:
+
+div.classList.add("texto-novo");
+
+div.classList.remove("borda-azul");
+
+div.classList.toggle("borda-azul");
+
+*Agora, depois de salvar as mudanças e verificar o navegador, veremos que o nosso elemento voltou a ter a classe borda-azul, recuperando a estilização da borda.
+
+Voltando ao arquivo script.js, copiamos a linha com o método toggle() e colocamos logo embaixo. Dessa forma:
+
+div.classList.add("texto-novo");
+
+div.classList.remove("borda-azul");
+
+
+div.classList.toggle("borda-azul");
+
+div.classList.toggle("borda-azul");
+
+*Após salvar as mudanças e voltar ao navegador, podemos ver que a classe foi novamente removida. Isso ocorre porque estamos retirando a classe com o método remove().
+
+Além disso, a primeira execução do método toggle() verifica se o elemento possui a classe borda-azul. Após confirmar essa ausência, o método a adiciona. A segunda execução do método toggle() faz a mesma verificação, mas dessa vez o elemento possui a classe, então o método a remove.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>

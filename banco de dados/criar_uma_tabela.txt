@@ -1,0 +1,187 @@
+Criar uma tabela
+
+Iremos aprender a construir nossa primeira tabela. Para isso, existem diversas ferramentas on-line e gratuitas que oferecem ambientes que simulam o uso do Sistema de Gerenciamento de Banco de Dados (SGBD).
+
+Para acompanhar esse conteúdo, recomendamos as ferramentas gratuitas SQLite Online do SQL Online IDE (https://sqliteonline.com)e a Online SQL Editor da Programiz, que funciona de forma muito didática(https://www.programiz.com/sql/online-compiler/).
+
+Apesar de ter algumas limitações em relação aos SGBDs reais, essas ferramentas disponibilizadas on-line são claras, práticas e ótimas para praticar.
+
+*Acesso ao sistema
+
+Acesse o editor SQLite Online e observe a área de trabalho.
+
+*Configurando o sistema
+
+Para configurar o sistema, selecionamos a opção PostgreSQL na barra lateral e, em seguida, clicamos no botão Click to connect para iniciar a conexão com o servidor.
+
+*Criar uma tabela
+
+Na área para escrever consultas, deixamos a estrutura pronta para criar uma tabela. Assim, usamos os comandos create e table, o nome da tabela que queremos criar e um par de parênteses. Observe:
+
+CREATE TABLE teste (
+
+)
+--------------------------------------
+Entre os parênteses, definimos os atributos, ou colunas, que estarão na nossa tabela.
+
+Para fazer isso, escrevemos o nome da coluna e, depois, o nome do tipo do dado. No nosso exemplo, começamos definindo uma coluna texto, com o tipo de dado VARCHAR(8).
+
+O número oito entre parênteses representa a quantidade máxima de caracteres que esse campo de texto poderá ter.
+
+CREATE TABLE teste (
+ texto VARCHAR(8)
+)
+----------------------------------
+Para definir a próxima coluna, devemos colocar uma vírgula no final da declaração da coluna anterior. Porém, vale destacar que a última definição não deve terminar em vírgula.
+
+No nosso caso, colocamos a vírgula após VARCHAR(8) e, em seguida, definimos cada coluna com seu respectivo tipo de dado.  Observe:
+
+CREATE TABLE teste (
+  texto VARCHAR(8),
+  num_inteiro INT,
+  num_decimal FLOAT,
+  valor_bool BOOLEAN
+)
+----------------------------------
+Para verificar se a tabela foi criada com sucesso, você deve observar a barra lateral, logo abaixo da tabela demo, apresentada na imagem.
+
+Se clicarmos na seta à direita do nome da tabela, veremos os nomes das colunas com seus respectivos tipos de dados.
+
+*Dados obrigatórios
+
+Para entender o que são os dados obrigatórios, vamos pensar em uma situação.
+
+Imagine o banco de dados de um pet shop, onde todo animal de estimação precisa ser associado a um tutor. Portanto, as informações desse tutor, como nome, telefone e e-mail, precisam ser obrigatórias.
+
+Às vezes, os clientes também querem registrar informações de um segundo tutor. Por isso, para diferenciar os valores obrigatórios dos valores opcionais na tabela, devemos levar em consideração a propriedade null.
+
+Salvar o registro de um pet sem os dados de pelo menos um tutor prejudicaria o funcionamento do sistema e das regras de negócio do pet shop.
+
+Por padrão, quando criamos uma tabela SQL, pressupomos que todas as colunas são opcionais. Assim, se quisermos definir que uma coluna tenha valor obrigatório, devemos definir a propriedade not null. Dessa forma, não podemos inserir um registro na nossa tabela se o valor da coluna estiver vazio.
+
+Vamos definir uma nova tabela, com o nome pessoa para aplicar esse e os próximos conceitos.
+
+Definimos uma coluna chamada nome, com o tipo de dado VARCHAR(30) e a opção not null. Com isso, estabelecemos que nenhum registro poderá ser adicionado à tabela pessoa sem incluir um valor para a coluna nome.
+
+CREATE TABLE pessoa (
+  nome VARCHAR(30) NOT NULL
+)
+-------------------------------------
+*Chave primária
+
+Na maioria dos SGBDs, temos duas opções para definir a primary key, ou a chave primária, da nossa tabela.
+
+Se tivermos uma chave primária simples, podemos defini-la usando o comando primary key na própria definição da coluna.
+
+Se tivermos uma chave primária composta, precisamos declará-la após a definição das colunas. Para isso, usamos o comando primary key com um par de parênteses e os nomes das colunas que compõem a chave primária composta. Esses nomes devem estar separados por vírgulas. Observe a imagem.
+
+Chave primária simples:
+
+CREATE TABLE TABLE (
+ column_1 data_type PRIMARY KEY,
+  column_2 data_type,
+  ...
+);
+
+Chave primária composta:
+
+CREATE TABLE TABLE(
+ column_1 data_type,
+ column_2 data_type,
+ ...
+ PRIMARY KEY (column_1, column_2)
+);
+
+**Chave primária
+No nosso caso, usaremos uma chave primária simples e definiremos uma nova coluna chamada pessoa_id. Essa terá o tipo de dado int e o comando primary key.
+
+CREATE TABLE pessoa (
+  pessoa_id INT PRIMARY KEY,
+  nome VARCHAR(8) Not NULL
+)
+
+*Autoincremento
+
+É muito comum usarmos números como a chave primária dos nossos registros. Como as chaves primárias não podem se repetir em uma tabela, verificar todos os dados utilizados para achar um valor disponível pode ser um processo demorado e ineficiente.
+
+Por isso, também é muito comum definir essas colunas com a opção de autoincremento. Assim, não precisamos nos preocupar em estabelecer o valor da coluna, pois o SGBD define os números automaticamente em ordem crescente, atribuindo sempre o próximo valor para cada novo registro.
+
+Além de definir o valor, ao usar o autoincremento, o SGBD define o tipo de dado int e a opção not null na coluna.
+
+A propriedade de autoincremento varia de sintaxe em cada SGBD. Às vezes, podendo usar comandos como auto_increment ou o identity().
+
+No nosso caso, por estarmos com o PostgreSQL, usaremos o comando serial na definição da coluna pessoa_id. Como essa funcionalidade só pode ser usada com dados numéricos, podemos substituir o tipo de dado int pelo comando serial:
+
+CREATE TABLE pessoa (
+  pessoa_id SERIAL PRIMARY KEY,
+  nome VARCHAR(8) Not NULL
+)
+
+Finalmente, devemos apertar o botão Run para executar nosso código e criar a tabela pessoa.
+
+Para verificar o funcionamento do autoincremento, basta inserir um valor na coluna nome e realizar um select na tabela. Dessa forma, veremos o registro criado com o nome e o valor que foi atribuído automaticamente.
+
+**Inserindo e buscando dados na tabela
+
+Para inserir o nome de uma pessoa na tabela, execute os seguintes comandos no ambiente SQL:
+
+INSERT INTO pessoa (nome) VALUES ('João');
+
+Já para selecionar a tabela pessoa e verificar seus dados:
+
+SELECT * FROM pessoa;
+
+Assim, no nosso exemplo, após inserir o dado na tabela, a busca encontrará o nome João seguido do id atribuído automaticamente.
+
+*Conclusão
+
+Muito bem! Agora você já consegue verificar os primeiros passos para a utilização de um SGBD, onde podemos criar tabelas, inserir, buscar e manipular dados. Não deixe de continuar praticando para aprimorar suas habilidades na construção de tabelas.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

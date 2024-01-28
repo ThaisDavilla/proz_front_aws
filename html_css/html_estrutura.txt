@@ -1,0 +1,59 @@
+Criando a estrutura base da HTML
+
+*Estrutura base
+A estrutura HTML é obrigatória para todas as páginas, pois não é possível executar corretamente sem ela.
+
+*Tags necessárias
+Para a criação dessa estrutura, são necessárias as tags: <!DOCTYPE html>, <html>, <head>, <meta>, <title> e <body>.
+
+As tags possuem hierarquias para que possam ser exibidas e interpretadas pelo navegador. Dessa forma, a estruturação tem a seguinte sequência:
+
+Na primeira linha, fica a tag DOCTYPE, que informa ao navegador qual versão da HTML está sendo usada naquela página;
+Depois, vem a tag html;
+Dentro de html, estão as tags head  (com ou sem script) e a body.
+
+*Estrutura
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+    <meta charset=”utf-8” />
+
+    <title>Meu site</title>      
+
+</head>
+
+ 
+
+<body>
+
+    <h1>Olá mundo!</h1>
+
+</body>
+
+</html>
+
+*Tag Body
+É importante ressaltar que todo o conteúdo que será exibido no site deverá ficar dentro da tag body, ou seja, tudo que for diferente de metadados ficará dentro dela.
+
+*Outras estruturas
+Essa é a estrutura base obrigatória para toda página HTML criada.
+
+Existem outras estruturas para criação de elementos, mas geralmente elas não possuem a formatação apresentada por já estarem implícitas no framework.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

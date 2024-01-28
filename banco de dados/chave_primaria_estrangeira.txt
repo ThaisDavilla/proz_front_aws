@@ -1,0 +1,62 @@
+Conceito da chave primária e estrangeira e criação de tabela aplicando a chave primária e estrangeira
+
+*Chave primária
+
+A chave primária, ou primary key (PK), determina, exclusivamente, um identificador por tabela. Isso significa que a informação presente nela não pode ser repetida.
+
+Além disso, uma chave primária não pode ser nula, ou seja, o campo da tabela não pode ficar vazio, precisa sempre conter a chave.
+
+A chave primária é categorizada em dois tipos: simples e composta. A simples é constituída por um único campo na tabela, que não pode ter mais de um registro com o mesmo valor.
+
+Já a composta é formada por mais de um campo, que pode repetir valores, mas sem replicar suas combinações.
+
+*Exemplo de chave primária simples
+
+A tabela que veremos a seguir tem dois campos de chave primária, sendo NUMERO_CONTA e NUMERO_AGENCIA. Dessa forma, ela tem chaves primárias compostas.
+
+                              CONTA BANCÁRIA
+NUMERO_CONTA:  PK NUMERO_AGENCIA: PK	SALDO
+
+	56	           1	                           R$ 200,00
+              08	           2	                           R$ 1.300,00
+              56	           2	                           R$ 800,00
+              25	           1	                           R$ 5.450,00
+
+
+Nessa tabela, podemos ter mais de uma conta bancária com o mesmo saldo, mais de uma conta bancária com o mesmo número ou mais de uma conta bancária na mesma agência. O que não é possível é ter mais de uma conta com o mesmo número na mesma agência simultaneamente. Observem que a primeira e a terceira conta possuem números de contas iguais mas que são de agências diferentes, e que também que cada agência possui mais de uma conta. Nessa tabela, isso não é um problema, pois os pares das chaves primárias não são iguais. O que não poderia ocorrer é, por exemplo, duas contas iguais na mesma agência.
+
+*Chave estrangeira
+Assim como a chave primária, a estrangeira faz parte dos conceitos básicos de Banco de Dados. A chave estrangeira, ou foreign key (FK), é utilizada na criação dos relacionamentos entre tabelas. (https://www.juliobattisti.com.br/artigos/office/modelorelacional_p2.asp)
+
+Ela é chamada assim pois faz referência à chave primária de uma tabela que não é a dela. Em sua tabela, a chave estrangeira é a própria chave primária.
+
+A chave estrangeira é utilizada para os relacionamentos das tabelas.
+
+Por exemplo, imagine o funcionamento de uma empresa onde existem duas tabelas, uma com os nomes de todos os departamentos e outra com os nomes de todos os funcionários. 
+
+Como saber em qual departamento cada funcionário trabalha? Para isso, precisamos fazer um relacionamento entre as tabelas.
+
+Antes de ser chave estrangeira, ela é uma chave primária em sua tabela de origem. Quando passa a ser referenciada em uma outra tabela, ela passa a ser chave estrangeira.
+
+Com a chave estrangeira, é possível otimizar as consultas no banco de dados a partir de um cruzamento de dados. (https://www.site.moki.com.br/post/cruzamento-de-dados)
+
+O cruzamento de dados é comum para otimizar as consultas em bancos de dados.
+
+Assim, uma chave estrangeira é uma coluna ou um grupo de colunas. Ela pode ou não ser a chave primária da sua própria tabela, mas, com certeza, é a chave primária de outra tabela.
+
+Quando a chave estrangeira é formada por mais de uma coluna, ela é denominada de composta.
+
+*Conclusão
+Para a construção de um banco de dados, é fundamental compreender o uso das diferentes chaves nas tabelas.
+
+Além disso, é importante atentar quando precisamos utilizar as chaves primárias compostas e as chaves estrangeiras, pois elas não são necessárias em todas as tabelas. Porém, todas as tabelas devem conter uma chave primária, seja ela simples ou não.
+
+
+
+
+
+
+
+
+
+
