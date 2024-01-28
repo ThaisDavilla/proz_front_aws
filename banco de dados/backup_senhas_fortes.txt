@@ -1,0 +1,65 @@
+*O que é backup?
+Backup de dados é uma cópia de segurança de qualquer tipo de dado, que é feita na nuvem ou em outros dispositivos, como pen drive e HD externo.
+
+Sua finalidade principal é restaurar arquivos digitais, através da recuperação de dados, em caso de perda dos arquivos originais.
+
+A cópia de segurança pode ser feita em um HD secundário.
+
+(https://www.significados.com.br/backup/)
+
+*A importância do backup
+Os registros podem ser recuperados através do backup se algum hardware falhe ou um sistema seja corrompido. Por isso, é importante criar essas cópias para a segurança digital de dados pessoais ou de uma empresa.
+
+Existem três tipos para armazenamento de cópias de segurança: completo (ou full), incremental e diferencial.
+
+É essencial ter cópias salvas dos dados.
+(https://www.significados.com.br/hardware/)
+
+*Backup full (completo)
+Esse tipo de backup realiza a cópia completa de todos os arquivos para destinos estabelecidos, como servidores, sistemas de discos e tapes LTO.
+
+Sua vantagem principal é ter uma cópia exata do ambiente de produção. Isso facilita a localizar arquivos que precisam ser restaurados.
+
+(https://www.controle.net/faq/tipos-de-backup-o-que-e-backup-full-incremental-e-diferencial)
+(https://www.controle.net/faq/o-que-sao-servidores)
+(https://www.ltostore.com.br/pagina/o-que-e-tecnologia-lto-linear-tape-open.html)
+
+*Backup incremental
+Normalmente, esse tipo é realizado após o completo. Assim, a cada nova instrução de backup, o sistema verifica quais arquivos foram alterados e copia os mais recentes.
+O backup aumenta gradativamente.
+
+*Backup diferencial
+Já esse tipo tem comportamento semelhante ao incremental, mas ele faz uma cópia desde o backup completo até todas as alterações mais recentes.
+
+Assim, ele armazena mais dados, requer mais espaço e tempo para ser realizado.
+O backup diferencial une o incremental e completo.
+
+**Política de senhas fortes
+A política de senhas fortes visa evitar senhas fáceis de serem descobertas, como datas de nascimento.
+
+ 
+
+Algumas práticas para construir senhas fortes são:
+
+utilizar caracteres diferentes;
+-- estabelecer um número máximo e mínimo de dígitos;
+-- evitar dados pessoais;
+--trocar periodicamente as senhas.
+ 
+Esses são alguns dos métodos que aumentam a segurança do banco de dados.
+
+As políticas de senhas são boas práticas para evitar ataques.
+
+
+
+
+
+
+
+
+
+
+
+
+
+

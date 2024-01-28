@@ -1,0 +1,20 @@
+No ano de 2022, diversas empresas sofreram tentativas de ataques cibernéticos que poderiam impactar diretamente a segurança dos dados. Portanto, é recomendado que funcionários e clientes de lojas virtuais sempre mantenham suas senhas de acesso atualizadas, alterando-as a cada três meses. Pensando nisso, cite pelo menos três métodos para melhorar essas senhas, com foco em fortalecê-las.
+
+1. Complexidade da Senha:
+   - Recomenda-se que as senhas sejam complexas, combinando maiúsculas, minúsculas, números e caracteres especiais.
+   - Utilize pelo menos 12 caracteres na senha para aumentar sua robustez.
+   - Evite o uso de palavras comuns, nomes próprios ou sequências simples, como "123456".
+
+2. Políticas de Senhas e Rotação Regular:
+   - Implemente políticas de senhas que exijam a rotação regular, por exemplo, a cada três meses.
+   - Estabeleça requisitos mínimos de complexidade, como a inclusão de caracteres especiais e a não reutilização de senhas antigas.
+   - Assegure-se de que as políticas de senha estejam configuradas no nível do servidor SQL para garantir consistência em todo o ambiente.
+
+3. Um método robusto amplamente utilizado para garantir a confidencialidade das informações é o AES-256 (Advanced Encryption Standard com chave de 256 bits). O AES-256 é um algoritmo simétrico que utiliza uma chave criptográfica de 256 bits, proporcionando um nível elevado de segurança. Ao implementar o AES-256 no contexto do SQL Server, as informações são criptografadas antes de serem armazenadas no banco de dados, impedindo acessos não autorizados. Essa abordagem é particularmente vital em ambientes nos quais a privacidade e a integridade dos dados são prioridades, fornecendo uma camada adicional de proteção contra possíveis ameaças cibernéticas, incluindo ataques de acesso não autorizado e vazamentos de dados.
+
+
+4. Uso de Hashing Seguro e Salting:
+   - Armazene senhas de forma segura utilizando algoritmos de hashing robustos, como SHA-256 ou SHA-3.
+   - Implemente a técnica de "salting", que envolve a adição de um valor único (salt) a cada senha antes do processo de hashing.
+   - O sal é armazenado junto com a senha no banco de dados, tornando mais difícil para os atacantes realizar ataques de dicionário ou usar tabelas de hash pré-calculadas.
+
