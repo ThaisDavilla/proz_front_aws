@@ -15,7 +15,6 @@ Meu grupo é composto por quatro pessoas e decidimos construir um blog falando s
  - Discord - Para comunicação
  - VS Code - Editor de código
  - Git - Versionamento
-=======
  - Discord 
  - VS Code 
  - Git
@@ -24,10 +23,8 @@ Meu grupo é composto por quatro pessoas e decidimos construir um blog falando s
  - CSS3
  - JavaScript
 
-<<<<<<< HEAD
-=======
 
->>>>>>> da5a2326dc60d21454d55adaa7772e86528b1281
+
 [Clique aqui para ver o repositório do nosso blog.](https://github.com/BarachoSilva/codigo-e-cafe)
 
 
