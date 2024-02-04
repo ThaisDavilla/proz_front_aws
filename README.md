@@ -21,13 +21,13 @@ Meu grupo é composto por quatro pessoas e decidimos construir um blog falando s
 
 
 
-[Clique aqui para ver o repositório do nosso blog.](https://barachosilva.github.io/hub-da-ti/index.html)
+[Clique aqui para ver o repositório do nosso blog.](https://github.com/BarachoSilva/hub-da-ti)
 
 
 
 
 
-[Conheça o nosso blog!](https://barachosilva.github.io/codigo-e-cafe/index.html)
+[Conheça o nosso blog!](https://barachosilva.github.io/hub-da-ti/index.html)
 
 
 * **Projetos individuais desenvolvidos durante o curso:**
