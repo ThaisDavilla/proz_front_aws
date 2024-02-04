@@ -12,9 +12,6 @@ Meu grupo é composto por quatro pessoas e decidimos construir um blog falando s
 
 **Ferramentas e tecnologias utilizadas:**
 
- - Discord - Para comunicação
- - VS Code - Editor de código
- - Git - Versionamento
  - Discord 
  - VS Code 
  - Git
@@ -24,7 +21,7 @@ Meu grupo é composto por quatro pessoas e decidimos construir um blog falando s
 
 
 
-[Clique aqui para ver o repositório do nosso blog.](https://github.com/BarachoSilva/codigo-e-cafe)
+[Clique aqui para ver o repositório do nosso blog.](https://barachosilva.github.io/hub-da-ti/index.html)
 
 
 
