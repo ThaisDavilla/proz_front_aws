@@ -1,0 +1,19 @@
+ Crie uma entidade que tenha atributos simples, composto e multivalorado.
+
+*Entidade: Livro
+
+--Atributos Simples:
+
+ Código cadastro: Identificador único para cada livro.
+ Título: Nome do livro.
+
+--Atributo Composto:
+
+ Autor:
+  Primeiro Nome.
+  Último Nome.
+
+--Atributo Multivalorado:
+
+Palavras-chave:
+Lista de palavras-chave associadas ao livro. (Pode ter uma ou várias palavras-chave)
